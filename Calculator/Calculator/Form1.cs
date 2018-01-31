@@ -12,7 +12,8 @@ namespace Calculator
 {
     public partial class Form1 : Form
     {
-        int val = 0;
+        int output = 0;
+        int temp = 0;
         public Form1()
         {
             InitializeComponent();
@@ -20,17 +21,38 @@ namespace Calculator
 
         private void one_Click(object sender, EventArgs e)
         {
-            val = 1;
+            updateScreen(1);
         }
 
         private void two_Click(object sender, EventArgs e)
         {
-            val = 2;
+            updateScreen(2);
         }
 
         private void three_Click(object sender, EventArgs e)
         {
-            val = 3;
+            updateScreen(3);
+        }
+                   
+
+        private void clear_Click(object sender, EventArgs e)
+        {
+            clearAll();
+        }
+
+        private void updateScreen(int val)
+        {
+            output = output * 10 + val;
+            op.Text = output.ToString();
+            //print output
+        }
+
+        private void clearAll()
+        {
+            output = 0;
+            op.Text = "0";
+            temp = 0;
+            //print output
         }
     }
 }

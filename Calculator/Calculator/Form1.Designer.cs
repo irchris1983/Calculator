@@ -44,6 +44,7 @@
             this.subtract = new System.Windows.Forms.Button();
             this.multiply = new System.Windows.Forms.Button();
             this.divide = new System.Windows.Forms.Button();
+            this.op = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // one
@@ -138,6 +139,7 @@
             this.clear.TabIndex = 0;
             this.clear.Text = "C";
             this.clear.UseVisualStyleBackColor = true;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
             // zero
             // 
@@ -193,11 +195,22 @@
             this.divide.Text = "/";
             this.divide.UseVisualStyleBackColor = true;
             // 
+            // op
+            // 
+            this.op.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.85714F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.op.Location = new System.Drawing.Point(31, 30);
+            this.op.Name = "op";
+            this.op.Size = new System.Drawing.Size(337, 58);
+            this.op.TabIndex = 1;
+            this.op.Text = "0";
+            this.op.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(394, 454);
+            this.Controls.Add(this.op);
             this.Controls.Add(this.divide);
             this.Controls.Add(this.equal);
             this.Controls.Add(this.multiply);
@@ -238,6 +251,7 @@
         private System.Windows.Forms.Button subtract;
         private System.Windows.Forms.Button multiply;
         private System.Windows.Forms.Button divide;
+        private System.Windows.Forms.Label op;
     }
 }
 
