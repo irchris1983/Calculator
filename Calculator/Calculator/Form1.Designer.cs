@@ -48,34 +48,37 @@
             // 
             // one
             // 
-            this.one.Location = new System.Drawing.Point(50, 103);
+            this.one.Location = new System.Drawing.Point(31, 103);
             this.one.Name = "one";
             this.one.Size = new System.Drawing.Size(75, 75);
             this.one.TabIndex = 0;
             this.one.Text = "1";
             this.one.UseVisualStyleBackColor = true;
+            this.one.Click += new System.EventHandler(this.one_Click);
             // 
             // two
             // 
-            this.two.Location = new System.Drawing.Point(131, 103);
+            this.two.Location = new System.Drawing.Point(112, 103);
             this.two.Name = "two";
             this.two.Size = new System.Drawing.Size(75, 75);
             this.two.TabIndex = 0;
             this.two.Text = "2";
             this.two.UseVisualStyleBackColor = true;
+            this.two.Click += new System.EventHandler(this.two_Click);
             // 
             // three
             // 
-            this.three.Location = new System.Drawing.Point(212, 103);
+            this.three.Location = new System.Drawing.Point(193, 103);
             this.three.Name = "three";
             this.three.Size = new System.Drawing.Size(75, 75);
             this.three.TabIndex = 0;
             this.three.Text = "3";
             this.three.UseVisualStyleBackColor = true;
+            this.three.Click += new System.EventHandler(this.three_Click);
             // 
             // four
             // 
-            this.four.Location = new System.Drawing.Point(50, 184);
+            this.four.Location = new System.Drawing.Point(31, 184);
             this.four.Name = "four";
             this.four.Size = new System.Drawing.Size(75, 75);
             this.four.TabIndex = 0;
@@ -84,7 +87,7 @@
             // 
             // five
             // 
-            this.five.Location = new System.Drawing.Point(131, 184);
+            this.five.Location = new System.Drawing.Point(112, 184);
             this.five.Name = "five";
             this.five.Size = new System.Drawing.Size(75, 75);
             this.five.TabIndex = 0;
@@ -93,7 +96,7 @@
             // 
             // six
             // 
-            this.six.Location = new System.Drawing.Point(212, 184);
+            this.six.Location = new System.Drawing.Point(193, 184);
             this.six.Name = "six";
             this.six.Size = new System.Drawing.Size(75, 75);
             this.six.TabIndex = 0;
@@ -102,7 +105,7 @@
             // 
             // seven
             // 
-            this.seven.Location = new System.Drawing.Point(50, 265);
+            this.seven.Location = new System.Drawing.Point(31, 265);
             this.seven.Name = "seven";
             this.seven.Size = new System.Drawing.Size(75, 75);
             this.seven.TabIndex = 0;
@@ -111,7 +114,7 @@
             // 
             // eight
             // 
-            this.eight.Location = new System.Drawing.Point(131, 265);
+            this.eight.Location = new System.Drawing.Point(112, 265);
             this.eight.Name = "eight";
             this.eight.Size = new System.Drawing.Size(75, 75);
             this.eight.TabIndex = 0;
@@ -120,7 +123,7 @@
             // 
             // nine
             // 
-            this.nine.Location = new System.Drawing.Point(212, 265);
+            this.nine.Location = new System.Drawing.Point(193, 265);
             this.nine.Name = "nine";
             this.nine.Size = new System.Drawing.Size(75, 75);
             this.nine.TabIndex = 0;
@@ -129,7 +132,7 @@
             // 
             // clear
             // 
-            this.clear.Location = new System.Drawing.Point(50, 346);
+            this.clear.Location = new System.Drawing.Point(31, 346);
             this.clear.Name = "clear";
             this.clear.Size = new System.Drawing.Size(75, 75);
             this.clear.TabIndex = 0;
@@ -138,7 +141,7 @@
             // 
             // zero
             // 
-            this.zero.Location = new System.Drawing.Point(131, 346);
+            this.zero.Location = new System.Drawing.Point(112, 346);
             this.zero.Name = "zero";
             this.zero.Size = new System.Drawing.Size(75, 75);
             this.zero.TabIndex = 0;
@@ -147,7 +150,7 @@
             // 
             // equal
             // 
-            this.equal.Location = new System.Drawing.Point(212, 346);
+            this.equal.Location = new System.Drawing.Point(193, 346);
             this.equal.Name = "equal";
             this.equal.Size = new System.Drawing.Size(75, 75);
             this.equal.TabIndex = 0;
@@ -156,7 +159,7 @@
             // 
             // add
             // 
-            this.add.Location = new System.Drawing.Point(312, 103);
+            this.add.Location = new System.Drawing.Point(293, 103);
             this.add.Name = "add";
             this.add.Size = new System.Drawing.Size(75, 75);
             this.add.TabIndex = 0;
@@ -165,7 +168,7 @@
             // 
             // subtract
             // 
-            this.subtract.Location = new System.Drawing.Point(312, 184);
+            this.subtract.Location = new System.Drawing.Point(293, 184);
             this.subtract.Name = "subtract";
             this.subtract.Size = new System.Drawing.Size(75, 75);
             this.subtract.TabIndex = 0;
@@ -174,7 +177,7 @@
             // 
             // multiply
             // 
-            this.multiply.Location = new System.Drawing.Point(312, 265);
+            this.multiply.Location = new System.Drawing.Point(293, 265);
             this.multiply.Name = "multiply";
             this.multiply.Size = new System.Drawing.Size(75, 75);
             this.multiply.TabIndex = 0;
@@ -183,7 +186,7 @@
             // 
             // divide
             // 
-            this.divide.Location = new System.Drawing.Point(312, 346);
+            this.divide.Location = new System.Drawing.Point(293, 346);
             this.divide.Name = "divide";
             this.divide.Size = new System.Drawing.Size(75, 75);
             this.divide.TabIndex = 0;
@@ -194,7 +197,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(427, 454);
+            this.ClientSize = new System.Drawing.Size(394, 454);
             this.Controls.Add(this.divide);
             this.Controls.Add(this.equal);
             this.Controls.Add(this.multiply);
