@@ -45,6 +45,7 @@
             this.multiply = new System.Windows.Forms.Button();
             this.divide = new System.Windows.Forms.Button();
             this.op = new System.Windows.Forms.Label();
+            this.clearentry = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // one
@@ -158,7 +159,7 @@
             // 
             // equal
             // 
-            this.equal.Location = new System.Drawing.Point(193, 346);
+            this.equal.Location = new System.Drawing.Point(293, 427);
             this.equal.Name = "equal";
             this.equal.Size = new System.Drawing.Size(75, 75);
             this.equal.TabIndex = 0;
@@ -216,11 +217,21 @@
             this.op.Text = "0";
             this.op.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
+            // clearentry
+            // 
+            this.clearentry.Location = new System.Drawing.Point(193, 346);
+            this.clearentry.Name = "clearentry";
+            this.clearentry.Size = new System.Drawing.Size(75, 75);
+            this.clearentry.TabIndex = 0;
+            this.clearentry.Text = "CE";
+            this.clearentry.UseVisualStyleBackColor = true;
+            this.clearentry.Click += new System.EventHandler(this.clearentry_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(394, 454);
+            this.ClientSize = new System.Drawing.Size(394, 504);
             this.Controls.Add(this.op);
             this.Controls.Add(this.divide);
             this.Controls.Add(this.equal);
@@ -234,6 +245,7 @@
             this.Controls.Add(this.eight);
             this.Controls.Add(this.five);
             this.Controls.Add(this.two);
+            this.Controls.Add(this.clearentry);
             this.Controls.Add(this.clear);
             this.Controls.Add(this.seven);
             this.Controls.Add(this.four);
@@ -263,6 +275,7 @@
         private System.Windows.Forms.Button multiply;
         private System.Windows.Forms.Button divide;
         private System.Windows.Forms.Label op;
+        private System.Windows.Forms.Button clearentry;
     }
 }
 
