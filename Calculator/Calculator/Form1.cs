@@ -33,18 +33,71 @@ namespace Calculator
         {
             updateScreen(3);
         }
-                   
 
         private void clear_Click(object sender, EventArgs e)
         {
             clearAll();
+        }
+        
+        private void four_Click(object sender, EventArgs e)
+        {
+            updateScreen(4);
+        }
+
+        private void five_Click(object sender, EventArgs e)
+        {
+            updateScreen(5);
+        }
+
+        private void six_Click(object sender, EventArgs e)
+        {
+            updateScreen(6);
+        }
+
+        private void seven_Click(object sender, EventArgs e)
+        {
+            updateScreen(7);
+        }
+
+        private void eight_Click(object sender, EventArgs e)
+        {
+            updateScreen(8);
+        }
+
+        private void nine_Click(object sender, EventArgs e)
+        {
+            updateScreen(9);
+        }
+
+        private void equal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void add_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void subtract_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void multiply_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void divide_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void updateScreen(int val)
         {
             output = output * 10 + val;
             op.Text = output.ToString();
-            //print output
         }
 
         private void clearAll()
@@ -52,7 +105,6 @@ namespace Calculator
             output = 0;
             op.Text = "0";
             temp = 0;
-            //print output
         }
     }
 }
